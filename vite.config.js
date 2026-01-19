@@ -14,5 +14,5 @@ export default defineConfig({
       }
     }
   },
-  base: "/ecommerce-project",
+  // base: "/ecommerce-project",
 })
