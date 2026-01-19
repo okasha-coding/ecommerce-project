@@ -13,6 +13,7 @@ export function CheckoutPage({ cart, loadCart }) {
     const fetchCheckoutdata = async () => {
       let response = await axios.get(
         "./api/delivery-options?expand=estimatedDeliveryTime"
+        // "/deliveryOptions.json"
       );
       setDeliveryOptions(response.data);
 

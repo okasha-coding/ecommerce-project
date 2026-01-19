@@ -21,6 +21,7 @@ function App() {
 
       const loadCart = async () => {
       const response = await axios.get("/api/cart-items?expand=product")
+      // const response = await axios.get("/cart.json")
       setCart(response.data)
     }
 

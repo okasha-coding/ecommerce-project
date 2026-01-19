@@ -18,6 +18,7 @@ export function HomePage({ cart, loadCart }) {
 
   useEffect(() => {
     axios.get("/api/products").then((response) => {
+    // axios.get("/products.json").then((response) => {
       setProducts(response.data);
     });
   }, []);
